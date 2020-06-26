@@ -34,7 +34,7 @@ function responsiveChart() {
     .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
   // Load the data from the csv file
-  d3.csv("assets/data/data.csv").then(function(csvData) {
+  d3.csv("d3_data_journalism/assets/data/data.csv").then(function(csvData) {
       // console.log(csvData);
 
       // Parse the income and obesity values from string to integer
