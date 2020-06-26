@@ -62,11 +62,7 @@ function responsiveChart() {
       chartGroup.append("g")
         .call(yAxis);
 
-      // var g = chartGroup.selectAll("g")
-      //   .data(csvData)
-      //   .enter()
-      //   .append("g")
-
+      // Create svg text of the abbreviation for each state
       var circleText = chartGroup.selectAll("stateText")
         .data(csvData)
         .enter()  
@@ -87,8 +83,6 @@ function responsiveChart() {
         .attr("fill", "green")
         .attr("opacity", ".6")
 
-
-        
       // Define the tooltip
       var toolTip = d3.tip()
         .attr("class", "tooltip")
