@@ -43,3 +43,7 @@ body {
   border: 1;
   border-radius: 10px;
 }
+
+#page-title {
+  margin: 30px;
+}
